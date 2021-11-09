@@ -1,0 +1,76 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Zdravo",
+        "Zdravo kako si",
+        "Jeli iko ovdje",
+        "Pozdrav",
+        "Dobar dan",
+        "Šta ima"
+      ],
+      "responses": [
+        "Zdravo!",
+        "Drago mi je što te vidim ponovo!",
+        "Zdravo, kako vam mogu pomoć?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "ćao",
+        "Vidimo se kasnije",
+        "Zbogom",
+        "Ja idem",
+        "Ugodan vam dan"
+      ],
+      "responses": [
+        "Žao mi je što nas napuštaš :(",
+        "Pričamo kasnije",
+        "Zbogom!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "Koliko ti je godina",
+        "Koliko je godina Enzi",
+        "Koliko je tebi godina",
+        "Koje so godište",
+        "godine?"
+      ],
+      "responses": ["Ja imam 29 godina!", "29 godina starosti"],
+      "context_set": ""
+    },
+    {
+      "tag": "name",
+      "patterns": ["Kako ti je ime", "Kako da te zovem", "Kako se zoveš?"],
+      "responses": [
+        "Možeš me zvat Enzzza",
+        "Ja sam Enzzza!",
+        "Ja sam Enis i nadimak mi je Enzzza."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "shop",
+      "patterns": [
+        "Želio bi da kupim nešto",
+        "Šta je na meniju",
+        "Šta preporučujete?",
+        "Mogu li dobit nešto da jedem"
+      ],
+      "responses": ["Mi prodajemo čokoladu za 2KM!", "Kolači su na meniju!"],
+      "context_set": ""
+    },
+    {
+      "tag": "hours",
+      "patterns": ["Kada otvarate", "Od kada radite", "Koliko radite"],
+      "responses": ["Otvoreni smo 24/7"],
+      "context_set": ""
+    }
+  ]
+}
