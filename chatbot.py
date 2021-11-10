@@ -1,17 +1,13 @@
 import nlzn
-
-import nltk
-from nltk.stem.lancaster import LancasterStemmer
-stemmer = LancasterStemmer()
-
 import numpy
 import tflearn
 import tensorflow
 import random
 import json
 import pickle
+import os
 
-with open("intents.json") as file:
+with open("intents.json",encoding="utf8") as file:
     data = json.load(file)
 
 try:
@@ -72,13 +68,13 @@ net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
 net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
-
+model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+model.save("model.tflearn")
 try:
     model.load("model.tflearn")
 except:
     model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
     model.save("model.tflearn")
-
 
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
@@ -116,5 +112,4 @@ def chat():
         
 chat()
         
-
 

@@ -4,10 +4,12 @@ import re
 import classla
 from conllu import parse
 import ast
+
+classla.download(lang='hr')
 nlp = classla.Pipeline('hr', processors='tokenize,lemma')
 
 def word_tokenize(text):
-    #classla.download(lang=language)
+    
     text = clean_text(text)
     doc = nlp(text)
     tokenlist = parse(doc.to_conll())
