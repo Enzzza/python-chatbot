@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  generate-model:
+    build:
+      context: ./generate_model
+      dockerfile: dockerfile
+    image: generate-model
+    container_name: generate-model
+    environment:
+      - LANG=en
+    volumes:
+      - ./generate_model/:/usr/src/app

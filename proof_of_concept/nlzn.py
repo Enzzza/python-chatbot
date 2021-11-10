@@ -1,3 +1,18 @@
+"""
+@inproceedings{ljubesic-dobrovoljc-2019-neural,
+    title = "What does Neural Bring? Analysing Improvements in Morphosyntactic Annotation and Lemmatisation of {S}lovenian, {C}roatian and {S}erbian",
+    author = "Ljube{\v{s}}i{\'c}, Nikola  and
+      Dobrovoljc, Kaja",
+    booktitle = "Proceedings of the 7th Workshop on Balto-Slavic Natural Language Processing",
+    month = aug,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/W19-3704",
+    doi = "10.18653/v1/W19-3704",
+    pages = "29--34"
+    }
+"""
 from bs4 import BeautifulSoup
 import string
 import re
