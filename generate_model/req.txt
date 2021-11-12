@@ -1,0 +1,7 @@
+tensorflow==2.7.0
+numpy==1.21.4
+tflearn==0.5.0
+python-dotenv==0.19.2
+beautifulsoup4==4.10.0
+classla==1.0.2
+conllu==4.4.1

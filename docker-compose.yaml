@@ -10,4 +10,4 @@ services:
     environment:
       - LANG=en
     volumes:
-      - ./generate_model/:/usr/src/app
+      - ./generate_model/src/model/:/src/model/
